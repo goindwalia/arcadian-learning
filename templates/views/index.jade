@@ -1,0 +1,276 @@
+extends ../layouts/default
+
+block content
+    .ex
+      .slider-inner
+        #da-slider.da-slider
+          .da-slide
+            h2
+              i CLEAN &amp; FRESH
+              br
+              i FULLY RESPONSIVE
+              br
+              i DESIGN
+            p
+              i Lorem ipsum dolor amet
+              br
+              i tempor incididunt ut
+              br
+              i veniam omnis 
+            .da-img
+              img(src='parallax-slider/img/1.png', alt='')
+          .da-slide
+            h2
+              i RESPONSIVE VIDEO
+              br
+              i SUPPORT AND
+              br
+              i MANY MORE
+            p
+              i Lorem ipsum dolor amet
+              br
+              i tempor incididunt ut
+            .da-img
+              iframe(src='http://player.vimeo.com/video/47911018', width='530', height='300', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')
+          .da-slide
+            h2
+              i USING BEST WEB
+              br
+              i SOLUTIONS WITH
+              br
+              i HTML5/CSS3
+            p
+              i Lorem ipsum dolor amet
+              br
+              i tempor incididunt ut
+              br
+              i veniam omnis 
+            .da-img
+              img(src='parallax-slider/img/html5andcss3.png', alt='image01')
+          .da-arrows
+            span.da-arrows-prev
+            span.da-arrows-next
+      // /slider
+      // === End Slider ===
+      // === Purchase Block ===
+      .purchase
+        .container
+          .row
+            .col-md-9.animated.fadeInLeft
+              span Unify is a clean and fully responsive incredible Template.
+              p
+                | At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi  vehicula sem ut volutpat. Ut non libero magna fusce condimentum eleifend enim a feugiat corrupti quos.
+            .col-md-3.btn-buy.animated.fadeInRight
+              a.btn-u.btn-u-lg(href='#')
+                i.fa.fa-cloud-download
+                |  Download Now
+      // /row
+      // End Purchase Block
+      // === Content Part ===
+      .container.content
+        // Service Blocks
+        .row.margin-bottom-30
+          .col-md-4
+            .service
+              i.fa.fa-cloud.service-icon
+              .desc
+                h4 CLOUD COMPUTING
+                p
+                  | loud Computing is not Merely a Technology Shift ,Its a Cultural Shift with New Development....
+          .col-md-4
+            .service
+              i.fa.fa-retweet.service-icon
+              .desc
+                h4 BIG DATA
+                p
+                  | Big Data -Transforming the Way we will do The Business Hadoop,NoSQL and Analytics lead the Wave...
+          .col-md-4
+            .service
+              i.fa.fa-unsorted.service-icon
+              .desc
+                h4 APPLICATION
+                p
+                  | With the Rise of Smartphones and Tablets ,Application Market will be ruled by iPhone and Andriod...
+          .col-md-4
+            .service
+              i.fa.fa-compress.service-icon
+              .desc
+                h4 TELECOM
+                p
+                  | Mobility -4G/LTE Transforming the Communication with M2M Internet of Things and IPv6...
+          .col-md-4
+            .service
+              i.fa.fa-cogs.service-icon
+              .desc
+                h4 SECURITY
+                p
+                  | The World Cyber Security with Network Security ,Application Security and Information Security....
+          .col-md-4
+            .service
+              i.fa.fa-rocket.service-icon
+              .desc
+                h4 DESIGN - UI/UX
+                p
+                  | Responsive Design .Animated Design ,2D/3D Animation Will the Critical for the solutions...
+        // End Service Blokcs
+        // Recent Works
+        .headline
+          h2 Learning Technology
+        .row.margin-bottom-20
+          .col-md-3.col-sm-6
+            .thumbnails.thumbnail-style.thumbnail-kenburn
+              .thumbnail-img
+                .overflow-hidden
+                  img.img-responsive(src='img/main/2.jpg', alt='')
+                a.btn-more.hover-effect(href='#') read more +
+              .caption
+                h3
+                  a.hover-effect(href='#') Cloud Computing
+                p
+                  | Arcadian Learning First Company Based at Chandigarh, introduced Cloud Computing Training, OpenStack Training, VmWare Training and Virtualization Training.
+          .col-md-3.col-sm-6
+            .thumbnails.thumbnail-style.thumbnail-kenburn
+              .thumbnail-img
+                .overflow-hidden
+                  img.img-responsive(src='img/main/3.jpg', alt='')
+                a.btn-more.hover-effect(href='#') read more +
+              .caption
+                h3
+                  a.hover-effect(href='#') Big Data
+                p
+                  | Big Data, now the necessity of the Business and Market Demand of the skilled professional who know Big Data Associate, Big Data Analytic.
+          .col-md-3.col-sm-6
+            .thumbnails.thumbnail-style.thumbnail-kenburn
+              .thumbnail-img
+                .overflow-hidden
+                  img.img-responsive(src='img/main/9.jpg', alt='')
+                a.btn-more.hover-effect(href='#') read more +
+              .caption
+                h3
+                  a.hover-effect(href='#') Telecom
+                p
+                  | In Telecommunication, Arcadian Learning First Company to Introduced 4G training, LTE training, telecom training, Packet Networks that helps the Professional.
+          .col-md-3.col-sm-6
+            .thumbnails.thumbnail-style.thumbnail-kenburn
+              .thumbnail-img
+                .overflow-hidden
+                  img.img-responsive(src='img/main/10.jpg', alt='')
+                a.btn-more.hover-effect(href='#') read more +
+              .caption
+                h3
+                  a.hover-effect(href='#') Application Development
+                p
+                  | The Era of Internet of thing mobile application development more effective and useful.
+        // End Recent Works
+        // Info Blokcs
+        .row.margin-bottom-30
+          // Welcome Block
+          .col-md-8.md-margin-bottom-40
+            .headline
+              h2 Arcadian learning&ndash;Best Industrial Training Company in Chandigarh
+            .row
+              .col-sm-4
+                img.img-responsive.margin-bottom-20(src='img/main/6.jpg', alt='')
+              .col-sm-8
+                p
+                  | Arcadian learning is an Initiative of Arcadian Technocrats Consultancy Services Pvt Ltd based in North India-IT Park Chandigarh that offers an intensive practical platform and comprehensive Industry Focused Training Program.
+                ul.list-unstyled.margin-bottom-20
+                  li
+                    i.fa.fa-check.color-green
+                    |  Telecom, Training Program Focused 4G/ LTE ,Linux, Networking.
+                  li
+                    i.fa.fa-check.color-green
+                    |  Cloud Computing, Training Program Focused Virtualization, SDN, VMware.
+                  li
+                    i.fa.fa-check.color-green
+                    |  BigData, Training Program Focused &ndash; Hadoop Administration, Hadoop.
+                  li
+                    i.fa.fa-check.color-green
+                    |  Mobile App Development- Android, iOS Training, iPhone Training
+            blockquote.hero-unify
+              p
+                | Award winning digital agency. We bring a personal and effective approach to every project we work on, which is why. Unify is an incredibly beautiful responsive Bootstrap Template for corporate professionals.
+              small CEO, Jack Bour
+          // /col-md-8
+          // Latest Shots
+          .col-md-4
+            .headline
+              h2 Latest Shots
+            #myCarousel.carousel.slide.carousel-v1
+              .carousel-inner
+                .item.active
+                  img(src='img/5.jpg', alt='')
+                  .carousel-caption
+                    p Facilisis odio, dapibus ac justo acilisis gestinas.
+                .item
+                  img(src='img/5.jpg', alt='')
+                  .carousel-caption
+                    p Cras justo odio, dapibus ac facilisis into egestas.
+                .item
+                  img(src='img/5.jpg', alt='')
+                  .carousel-caption
+                    p Justo cras odio apibus ac afilisis lingestas de.
+              .carousel-arrow
+                a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                  i.fa.fa-angle-left
+                a.right.carousel-control(href='#myCarousel', data-slide='next')
+                  i.fa.fa-angle-right
+          // /col-md-4
+        // End Info Blokcs
+        // Our Clients
+        #clients-flexslider.flexslider.home.clients
+          .headline
+            h2 Our Clients
+          ul.slides
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+            li
+              a(href='#')
+                img(src='img/hp_grey.png', alt='')
+                img.color-img(src='img/hp.png', alt='')
+        // flexslider
+        // End Our Clients
+      // /container
+      // End Content Part

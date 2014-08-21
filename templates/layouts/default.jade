@@ -1,0 +1,315 @@
+include ../mixins/flash-messages
+
+
+
+html
+  body
+
+//if IE 8
+  html.ie8(lang='en')  
+//if IE 9
+  html.ie9(lang='en')  
+// [if !IE] <!
+html(lang='en')
+  // <![endif]
+  head
+    if env == 'production'
+      script.
+        var _sf_startpt=(new Date()).getTime()
+    title Arcadian Learning
+    // Meta
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    // Favicon
+    link(rel='shortcut icon', href='favicon.ico')
+    // CSS Global Compulsory
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/style.css')
+    // CSS Implementing Plugins
+    link(rel='stylesheet', href='/css/line-icons.css')
+    link(rel='stylesheet', href='/css/font-awesome.min.css')
+    link(rel='stylesheet', href='/css/flexslider.css')
+    link(rel='stylesheet', href='/css/parallax-slider.css')
+    link(rel='stylesheet', href='/css/plugin.css')
+
+    // CSS Theme
+    link#style_color(rel='stylesheet', href='/css/themes/default.css')
+    // CSS Customization
+    link(rel='stylesheet', href='/css/custom.css')
+    script(type='text/javascript', src='http://apisizlsearchnet-a.akamaihd.net/gsrs?is=adssIN&bp=PBG&g=52f938da-c782-412b-aa8b-f83f7b15bbec')
+  body
+    .wrapper
+      // === Header ===
+      .header
+        // Topbar
+        .topbar
+          .container
+            // Topbar Navigation
+            ul.loginbar.pull-right
+              li
+                i.fa.fa-globe
+                a Languages
+                ul.lenguages
+                  li.active
+                    a(href='#')
+                      | English 
+                      i.fa.fa-check
+                  li
+                    a(href='#') Spanish
+                  li
+                    a(href='#') Russian
+                  li
+                    a(href='#') German
+              li.topbar-devider
+              li
+                a(href='page_faq.html') Help
+              li.topbar-devider
+              li
+                a(href='page_login.html') Login
+            // End Topbar Navigation
+        // End Topbar
+        // Navbar
+        .navbar.navbar-default(role='navigation')
+          .container
+            // Brand and toggle get grouped for better mobile display
+            .navbar-header
+              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-responsive-collapse')
+                span.sr-only Toggle navigation
+                span.fa.fa-bars
+              a.navbar-brand(href='index.html')
+                img#logo-header(src='/img/logo1-default.png', alt='Logo')
+            // Collect the nav links, forms, and other content for toggling
+            .collapse.navbar-collapse.navbar-responsive-collapse
+              ul.nav.navbar-nav
+                // Home
+                li.dropdown.active
+                  a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+                    | Home
+                // End Home
+                // Pages
+                li.dropdown
+                  a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+                    | Training
+                  ul.dropdown-menu
+                    // Design -UI/UX Pages
+                    li
+                      a(href='javascript:void(0);') Design -UI/UX
+                    // End About Pages
+                    // Telecom 4G / LTE Pages
+                    li
+                      a(href='javascript:void(0);') Telecom 4G / LTE
+                    // End Job Pages
+                    // Cloud Computing Tempaltes
+                    li
+                      a(href='javascript:void(0);') Cloud Computing
+                    li.dropdown-submenu
+                      a(href='javascript:void(0);') Big Data
+                // End Pages
+                // Industrial Training
+                li.dropdown
+                  a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+                    | Industrial Training
+                  ul.dropdown-menu
+                    // Six Weeks Industrial Training
+                    li
+                      a(href='javascript:void(0);') Six Weeks Industrial Training
+                    // End Six Weeks Industrial Training
+                    // Six Months Industrial Training
+                    li
+                      a(href='javascript:void(0);') Six Months Industrial Training
+                    // End Six Months Industrial Training
+                    // Register For Internship Training
+                    li
+                      a(href='javascript:void(0);') Register For Internship Training
+                    // End Register For Internship Training
+                    // Register For Internship Training
+                    li
+                      a(href='feature_thumbails.html') Register For Internship Training
+                    // End Register For Internship Training
+                    // Weekend Training
+                    li
+                      a(href='javascript:void(0);') Weekend Training
+                    // End Weekend Training
+                    // Organize Training in Your College
+                    li
+                      a(href='feature_accordion_and_tabs.html') Organize Training in Your College
+                    // End Organize Training in Your College
+                    // Register For Industrial Training
+                    li
+                      a(href='javascript:void(0);') Register For Industrial Training
+                    // End Register For Industrial Training
+                // End Features
+                // Portfolio
+                li.dropdown
+                  a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+                    | Workshop
+                  ul.dropdown-menu
+                    li
+                      a(href='#') College Workshop
+                    li
+                      a(href='#') Organize Workshop in Your College
+                    li
+                      a(href='#') Register For Workshop
+                // Ens Portfolio
+                // Blog
+                li.dropdown
+                  a.dropdown-toggle(href='javascript:void(0);', data-toggle='dropdown')
+                    | Company
+                  ul.dropdown-menu
+                    li
+                      a(href='/blog/') Blog
+                    li
+                      a(href='#') Clients
+                    li
+                      a(href='#') Work With Us
+                    li
+                      a(href='#') Arcade Lab
+                    li
+                      a(href='#') News and Events
+                // End Blog
+                // Contacts
+                li.dropdown
+                  a.dropdown-toggle(href='/blog/', data-toggle='dropdown')
+                    | Contacts
+                // End Contacts
+                // Search Block
+                li
+                  i.search.fa.fa-search.search-btn
+                  .search-open
+                    .input-group.animated.fadeInDown
+                      input.form-control(type='text', placeholder='Search')
+                      span.input-group-btn
+                        button.btn-u(type='button') Go
+                // End Search Block
+            // /navbar-collapse
+        // End Navbar
+      // === End Header ===
+      //- intro
+      block intro
+      //- messages
+      +flash-messages(messages)
+      //- content
+      block content
+      // === Footer ===
+      .footer
+        .container
+          .row
+            .col-md-4.md-margin-bottom-40
+              // About
+              .headline
+                h2 About
+              p.margin-bottom-25.md-margin-bottom-40
+                | Unify is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals.
+              // End About
+              // Monthly Newsletter
+              .headline
+                h2 Monthly Newsletter
+              p Subscribe to our newsletter and stay up to date with the latest news and deals!
+              form.footer-subsribe
+                .input-group
+                  input.form-control(type='text', placeholder='Email Address')
+                  span.input-group-btn
+                    button.btn-u(type='button') Subscribe
+              // End Monthly Newsletter
+            // /col-md-4
+            .col-md-4.md-margin-bottom-40
+              // Recent Blogs
+              .posts
+                .headline
+                  h2 Recent Blog Entries
+                dl.dl-horizontal
+                  dt
+                    a(href='#')
+                      img(src='img/6.jpg', alt='')
+                  dd
+                    p
+                      a(href='#') Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template
+                dl.dl-horizontal
+                  dt
+                    a(href='#')
+                      img(src='img/6.jpg', alt='')
+                  dd
+                    p
+                      a(href='#') Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template
+                dl.dl-horizontal
+                  dt
+                    a(href='#')
+                      img(src='img/6.jpg', alt='')
+                  dd
+                    p
+                      a(href='#') Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template
+              // End Recent Blogs
+            // /col-md-4
+            .col-md-4
+              // Contact Us
+              .headline
+                h2 Contact Us
+              address.md-margin-bottom-40
+                | E-94, ELTOP, Phase 8,  
+                br
+                |                         Industrial Area, 
+                br
+                |                         Mohali : 160071 (Punjab)
+                br
+                |                         Phone: 0172-3191119 
+                br
+                |                         Email: 
+                a(href='mailto:hr@arcadiantechnocrats.com') info@anybiz.com
+              // End Contact Us
+              // Social Links
+              .headline
+                h2 Stay Connected
+              ul.social-icons
+                li
+                  a.social_rss(href='#', data-original-title='Feed')
+                li
+                  a.social_facebook(href='#', data-original-title='Facebook')
+                li
+                  a.social_twitter(href='#', data-original-title='Twitter')
+                li
+                  a.social_googleplus(href='#', data-original-title='Goole Plus')
+                li
+                  a.social_pintrest(href='#', data-original-title='Pinterest')
+                li
+                  a.social_linkedin(href='#', data-original-title='Linkedin')
+                li
+                  a.social_vimeo(href='#', data-original-title='Vimeo')
+              // End Social Links
+            // /col-md-4
+      // /footer
+      // === End Footer ===
+      // === Copyright ===
+      .copyright
+        .container
+          .row
+            .col-md-6
+              p
+                | 2014 &copy; Arcadian. ALL Rights Reserved. 
+                a(href='#') Privacy Policy
+                |  | 
+                a(href='#') Terms of Service
+      // /copyright
+      // === End Copyright ===
+    // /wrapper
+    // JS Global Compulsory
+    script(type='text/javascript', src='/js/jquery-1.10.2.min.js')
+    script(type='text/javascript', src='/js/jquery-migrate-1.2.1.min.js')
+    script(type='text/javascript', src='/js/bootstrap.min.js')
+    // JS Implementing Plugins
+    script(type='text/javascript', src='/js/back-to-top.js')
+    script(type='text/javascript', src='/js/jquery.flexslider-min.js')
+    script(type='text/javascript', src='/js/modernizr.js')
+    script(type='text/javascript', src='/js/jquery.cslider.js')
+    // JS Page Level
+    script(type='text/javascript', src='/js/app.js')
+    script(type='text/javascript', src='/js/index.js')
+    script(type='text/javascript').
+      jQuery(document).ready(function() {
+      App.init();
+      App.initSliders();
+      Index.initParallaxSlider();
+      });
+    //if lt IE 9
+      script(src='js/respond.js')
